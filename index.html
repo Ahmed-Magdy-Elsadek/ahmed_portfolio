@@ -1,90 +1,48 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ahmed Magdy Elsadek</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVvLs0FZxj8SbDhN6Yh7eMN2Noj+zn6k8wr+rrX9mS0+qhJp1YyT1pJuXGpMZrN1zeyzYcC6D1KMK7uvK/UShA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <img src="file_00000000a4a86246b30e808f23cde75d.png" alt="Ahmed Magdy Elsadek" class="profile-img" />
-      <h1>Ahmed Magdy Elsadek</h1>
-      <p>Data Analyst | SPSS & Power BI Specialist</p>
-    </header><section>
-  <h2>About Me</h2>
-  <p>
-    I'm a passionate data analyst specialized in SPSS and Power BI. I hold a Postgraduate Diploma in Data Analysis.
-    I help businesses turn data into insights using smart dashboards and reports.
-    I am open to part-time remote opportunities.
-  </p>
-</section>
+/* === Global Styles === */ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(to bottom, #f0f4f8, #e4ecf0); color: #2c3e50; margin: 0; padding: 0; animation: fadeIn 1s ease-in-out; }
 
-<section>
-  <h2>Education</h2>
-  <ul>
-    <li><strong>Postgraduate Diploma in Data Analysis</strong><br>Faculty of Statistical Studies, Cairo University</li>
-    <li><strong>Bachelor's Degree in Communications Engineering</strong></li>
-  </ul>
-</section>
+.container { width: 90%; max-width: 960px; margin: 0 auto; padding: 20px; }
 
-<section>
-  <h2>Skills</h2>
-  <ul>
-    <li><i class="fa-solid fa-database animated-icon"></i> Power BI</li>
-    <li><i class="fa-solid fa-chart-line animated-icon"></i> IBM SPSS</li>
-    <li>Data Cleaning</li>
-    <li>Data Visualization</li>
-    <li>Business Intelligence</li>
-  </ul>
-</section>
+/* === Navbar === */ .navbar { position: sticky; top: 0; background-color: #42435e; padding: 10px 0; z-index: 999; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
 
-<section id="projects">
-  <h2>Projects</h2>
+.navbar ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; }
 
-  <div class="project">
-    <h3>Car Sales Dashboard</h3>
-    <img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard">
-    <p>A Power BI dashboard visualizing car sales data, categorized by manufacturer, engine size, and vehicle type.</p>
-  </div>
+.navbar li { margin: 0 15px; }
 
-  <div class="project">
-    <h3>Sales Analytics Dashboard</h3>
-    <img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard">
-    <p>A comprehensive dashboard showing total sales, profits, and order insights across different states and products.</p>
-  </div>
+.navbar a { color: #ffffff; text-decoration: none; font-weight: bold; transition: color 0.3s ease; }
 
-  <div class="project">
-    <h3>Movies Insights Dashboard</h3>
-    <img src="IMG_20250805_090640.jpg" alt="Movies Insights Dashboard">
-    <p>Dashboard analyzing top 1000 movies by revenue, ratings, genres, and certificates using Power BI.</p>
-  </div>
+.navbar a:hover { color: #85d7c5; }
 
-  <div class="project">
-    <h3>Lung Cancer Dashboard</h3>
-    <img src="IMG-20250821-WA0000.jpg" alt="Lung Cancer Dashboard">
-    <p>A Power BI dashboard analyzing lung cancer patients based on gender, smoking status, survival, and treatment types.</p>
-  </div>
-</section>
+/* === Header === */ .header { text-align: center; padding: 40px 0; background: linear-gradient(to right, #85d7c5, #42435e); color: white; border-radius: 10px; animation: slideInDown 1s ease; }
 
-<section>
-  <h2>CV</h2>
-  <p><a href="Ahmed Magdy Ahmed Elsadek-1.pdf" download>Download my CV (PDF)</a></p>
-</section>
+.profile-img { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 5px solid white; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.3s ease; }
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:Ahmed.elsadek.data@gmail.com">Ahmed.elsadek.data@gmail.com</a></p>
-  <p>Phone: 01050810870</p>
-  <p>Location: Cairo, Egypt</p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-magdy-967668357" target="_blank">linkedin.com/in/ahmed-magdy-967668357</a></p>
-</section>
+.profile-img:hover { transform: scale(1.05); }
 
-<footer>
-  <p>&copy; 2025 Ahmed Magdy Elsadek</p>
-</footer>
+h1 { margin: 10px 0 5px; font-size: 28px; }
 
-  </div>
-</body>
-</html>
+p { margin: 5px 0 15px; font-size: 18px; }
+
+/* === Section Styles === */ section { background-color: white; margin-top: 30px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); animation: fadeInUp 1s ease; }
+
+h2 { border-left: 5px solid #85d7c5; padding-left: 10px; color: #42435e; font-size: 24px; margin-bottom: 15px; }
+
+ul { list-style-type: square; padding-left: 20px; }
+
+.project { margin-bottom: 20px; }
+
+.project img { width: 100%; border-radius: 10px; margin-top: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+
+.project img:hover { transform: scale(1.02); }
+
+/* === Footer === */ footer { text-align: center; margin: 40px 0 10px; color: #888; font-size: 14px; }
+
+/* === Animated Icons for Skills === */ .animated-icon { margin-right: 10px; font-size: 20px; color: #42435e; animation: pulse 1.5s infinite; }
+
+@keyframes pulse { 0% { transform: scale(1); color: #42435e; } 50% { transform: scale(1.2); color: #85d7c5; } 100% { transform: scale(1); color: #42435e; } }
+
+/* === Animations === */ @keyframes fadeIn { from { opacity: 0; } to   { opacity: 1; } }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to   { opacity: 1; transform: translateY(0); } }
+
+@keyframes slideInDown { from { opacity: 0; transform: translateY(-30px); } to   { opacity: 1; transform: translateY(0); } }
+
