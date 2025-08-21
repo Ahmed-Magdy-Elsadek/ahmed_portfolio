@@ -2,103 +2,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Ahmed Magdy Elsadek</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Projects - Ahmed Magdy Elsadek</title>
+  <link href="style.css" rel="stylesheet" />
   <style>
-    * {
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #f0f4f8, #e4ecf0);
+      color: #2c3e50;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
     }
-    body {
-      background: linear-gradient(to right, #e3f2fd, #fce4ec);
-      color: #2e2e2e;
+    .projects-page {
       padding: 40px 20px;
-    }
-    h1 {
       text-align: center;
-      font-size: 36px;
-      margin-bottom: 40px;
-      animation: fadeInDown 1s ease;
     }
-    .projects {
+    .projects-page h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
-      animation: fadeInUp 1.5s ease;
+      padding: 20px;
     }
-    .card {
-      background-color: white;
-      border-radius: 20px;
+    .project-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
     }
-    .card:hover {
-      transform: translateY(-8px);
+    .project-card:hover {
+      transform: translateY(-10px);
     }
-    .card img {
+    .project-card img {
       width: 100%;
       height: 200px;
       object-fit: cover;
-      border-bottom: 1px solid #eee;
     }
-    .card-content {
-      padding: 20px;
-    }
-    .card-title {
+    .project-card h3 {
+      padding: 10px 15px;
       font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #5c6bc0;
     }
-    .card-desc {
-      font-size: 15px;
+    .project-card p {
+      padding: 0 15px 15px;
+      font-size: 16px;
       color: #555;
     }
-    a {
-      text-decoration: none;
-    }@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
   </style>
 </head>
 <body>
-  <h1>My Projects</h1>
-  <div class="projects">
-    <div class="card">
-      <img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard">
-      <div class="card-content">
-        <div class="card-title">Car Sales Dashboard</div>
-        <div class="card-desc">Analyzing car resale and price statistics by manufacturer and engine size using Power BI.</div>
+  <div class="projects-page">
+    <h1>My Dashboard Projects</h1>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard">
+        <h3>Car Sales Dashboard</h3>
+        <p>A visual summary of car sales by manufacturer, engine size, and type.</p>
       </div>
-    </div>
-    <div class="card">
-      <img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard">
-      <div class="card-content">
-        <div class="card-title">Sales Analytics Dashboard</div>
-        <div class="card-desc">A dashboard showing total sales, profits, and order insights across multiple regions.</div>
+      <div class="project-card">
+        <img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard">
+        <h3>Sales Analytics Dashboard</h3>
+        <p>A dashboard showing total sales, profits, and order insights across multiple regions.</p>
       </div>
-    </div>
-    <div class="card">
-      <img src="IMG_20250805_090640.jpg" alt="Movies Dashboard">
-      <div class="card-content">
-        <div class="card-title">Movies Insights Dashboard</div>
-        <div class="card-desc">Analyzing top movies by revenue, genre, and certificates using Power BI.</div>
+      <div class="project-card">
+        <img src="IMG-20250821-WA0000.jpg" alt="Movies Insights Dashboard">
+        <h3>Movies Insights Dashboard</h3>
+        <p>Analyzing top movies by revenue, genre, and certificates using Power BI.</p>
       </div>
-    </div>
-    <div class="card">
-      <img src="Today 07:38.jpg" alt="Lung Cancer Dashboard">
-      <div class="card-content">
-        <div class="card-title">Lung Cancer Dashboard</div>
-        <div class="card-desc">Visualizing patient data by country, smoking status, treatment types, and survival outcomes.</div>
+      <div class="project-card">
+        <img src="IMG_20250805_090640.jpg" alt="Lung Cancer Dashboard">
+        <h3>Lung Cancer Dashboard</h3>
+        <p>Medical insights dashboard showing survival rates, treatment duration, and demographics.</p>
       </div>
     </div>
   </div>
