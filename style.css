@@ -1,6 +1,16 @@
-/* === Global Styles === */ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9; color: #333; margin: 0; padding: 0; animation: fadeIn 1s ease-in-out; }
+/* === Global Styles === */ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(to bottom, #f0f4f8, #e4ecf0); color: #2c3e50; margin: 0; padding: 0; animation: fadeIn 1s ease-in-out; }
 
 .container { width: 90%; max-width: 960px; margin: 0 auto; padding: 20px; }
+
+/* === Navbar === */ .navbar { position: sticky; top: 0; background-color: #42435e; padding: 10px 0; z-index: 999; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+.navbar ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; }
+
+.navbar li { margin: 0 15px; }
+
+.navbar a { color: #ffffff; text-decoration: none; font-weight: bold; transition: color 0.3s ease; }
+
+.navbar a:hover { color: #85d7c5; }
 
 /* === Header === */ .header { text-align: center; padding: 40px 0; background: linear-gradient(to right, #85d7c5, #42435e); color: white; border-radius: 10px; animation: slideInDown 1s ease; }
 
@@ -26,9 +36,9 @@ ul { list-style-type: square; padding-left: 20px; }
 
 /* === Footer === */ footer { text-align: center; margin: 40px 0 10px; color: #888; font-size: 14px; }
 
-/* === Animated Icons for Skills === */ .animated-icon { margin-right: 10px; color: #42435e; animation: pulse 1.5s infinite; }
+/* === Animated Icons for Skills === */ .animated-icon { margin-right: 10px; font-size: 20px; color: #42435e; animation: pulse 1.5s infinite; }
 
-@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); color: #85d7c5; } 100% { transform: scale(1); } }
+@keyframes pulse { 0% { transform: scale(1); color: #42435e; } 50% { transform: scale(1.2); color: #85d7c5; } 100% { transform: scale(1); color: #42435e; } }
 
 /* === Animations === */ @keyframes fadeIn { from { opacity: 0; } to   { opacity: 1; } }
 
