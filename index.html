@@ -1,58 +1,81 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html><html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ahmed Elsadek Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <title>Ahmed Elsadek | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #b2fefa, #0ed2f7);
+      color: #333;
+    }
+    nav {
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffffdd;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+    .profile-pic {
+      width: 160px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    h2 {
+      color: #444;
+    }
+    .contact {
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+    .contact p {
+      margin: 0.3rem 0;
     }
   </style>
-</head><body class="bg-gradient-to-br from-teal-100 to-purple-100 min-h-screen py-10 px-4">
-  <div class="max-w-4xl mx-auto">
-    <nav class="mb-10">
-      <ul class="flex space-x-6 text-lg font-semibold text-purple-800 underline">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="cv.html">CV</a></li>
-      </ul>
-    </nav><div class="text-center mb-10">
-  <img src="file_00000000a4a86246b30e808f23cde75d.png" alt="Ahmed Elsadek" class="w-40 h-40 rounded-full mx-auto shadow-lg border-4 border-white" />
-  <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mt-4">Ahmed Magdy Elsadek</h1>
-  <p class="text-lg sm:text-xl text-gray-600 mt-2">Data Analyst | Power BI | SPSS</p>
-</div>
-
-<section class="bg-white rounded-2xl shadow-md p-6 mb-6">
-  <h2 class="text-2xl font-bold text-purple-700 mb-4">About Me</h2>
-  <p class="text-gray-700 leading-relaxed">A passionate data analyst specialized in business intelligence, data visualization, and uncovering actionable insights. I enjoy transforming data into compelling stories that support decision-making and strategic growth.</p>
-</section>
-
-<section class="bg-white rounded-2xl shadow-md p-6 mb-6">
-  <h2 class="text-2xl font-bold text-purple-700 mb-4">Skills</h2>
-  <ul class="list-disc pl-5 space-y-2 text-gray-700">
-    <li>IBM SPSS</li>
-    <li>Power BI</li>
-    <li>Data Cleaning</li>
-    <li>Data Visualization</li>
-    <li>Business Intelligence</li>
-  </ul>
-</section>
-
-<section class="bg-white rounded-2xl shadow-md p-6 mb-6">
-  <h2 class="text-2xl font-bold text-purple-700 mb-4">Projects</h2>
-  <p class="text-gray-700">Click the title to explore detailed dashboards and visualizations.</p>
-</section>
-
-<section class="bg-white rounded-2xl shadow-md p-6">
-  <h2 class="text-2xl font-bold text-purple-700 mb-4">Contact</h2>
-  <ul class="text-gray-700 space-y-2">
-    <li>Email: <a href="mailto:Ahmed.elsadek.data@gmail.com" class="text-blue-600">Ahmed.elsadek.data@gmail.com</a></li>
-    <li>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-magdy-967668357" class="text-blue-600">linkedin.com/in/ahmed-magdy-967668357</a></li>
-    <li>GitHub: <a href="https://github.com/Ahmed-Magdy-Elsadek" class="text-blue-600">github.com/Ahmed-Magdy-Elsadek</a></li>
-  </ul>
-</section>
-
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="cv.html">CV</a>
+  </nav>
+  <div class="container" style="text-align: center">
+    <img class="profile-pic" src="file_00000000a4a86246b30e808f23cde75d.png" alt="Ahmed Magdy Elsadek" />
+    <h1>Ahmed Magdy Elsadek</h1>
+    <p>Data Analyst | Power BI | SPSS</p>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        A passionate data analyst specialized in business intelligence, data visualization,
+        and uncovering actionable insights to support decision-making.
+      </p>
+    </section>
+    <section class="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> eng.ahmed.elsadek.data@gmail.com</p>
+      <p><strong>Phone:</strong> 01500061807</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahmed-magdy-967668357" target="_blank">ahmed-magdy-967668357</a></p>
+    </section>
   </div>
-</body></html>
+</body>
+</html>
