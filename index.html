@@ -27,7 +27,10 @@
 </head>
 <body>
 
-<!-- ✅ Navigation Bar -->
+<!-- زر الوضع الليلي -->
+<button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+
+<!-- ✅ Navbar -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="#about">About</a>
@@ -127,24 +130,24 @@
 
 </div>
 
-<!-- Scroll to Top Button -->
+<!-- Scroll To Top -->
 <button id="scrollTopBtn" onclick="scrollToTop()">↑ Top</button>
 
-<!-- AOS & JS -->
+<!-- Scripts -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
 
   const btn = document.getElementById("scrollTopBtn");
   window.onscroll = function () {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
+    btn.style.display = (window.scrollY > 300) ? "block" : "none";
   };
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
   }
 </script>
 </body>
