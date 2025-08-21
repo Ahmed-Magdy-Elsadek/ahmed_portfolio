@@ -10,48 +10,6 @@
     html {
       scroll-behavior: smooth;
     }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom, #f8f8f8, #ffffff);
-    }
-    .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .header {
-      text-align: center;
-      padding: 20px;
-    }
-    .profile-img {
-      width: 150px;
-      border-radius: 50%;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    .project img {
-      width: 100%;
-      max-width: 600px;
-      transition: transform 0.3s ease;
-    }
-    .project img:hover {
-      transform: scale(1.05);
-    }
-    @media (max-width: 768px) {
-      .container {
-        padding: 10px;
-      }
-      .profile-img {
-        width: 100px;
-      }
-      .project img {
-        width: 100%;
-      }
-    }
     #scrollTopBtn {
       position: fixed;
       bottom: 20px;
@@ -63,23 +21,39 @@
       padding: 10px 15px;
       border-radius: 5px;
       cursor: pointer;
+      z-index: 9999;
     }
   </style>
 </head>
 <body>
+
+<!-- ✅ Navigation Bar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#languages">Languages</a>
+    <a href="#projects">Projects</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
 <div class="container">
+
   <header class="header" data-aos="fade-down">
     <img src="file_00000000a486246b30e8808f23cde75d.png" alt="Ahmed Magdy Elsadek" class="profile-img" />
     <h1>Ahmed Magdy Elsadek</h1>
     <p>Data Analyst | SPSS & Power BI Specialist</p>
   </header>
 
-  <section data-aos="fade-up">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>I'm a passionate data analyst specialized in SPSS and Power BI. I hold a Postgraduate Diploma in Data Analysis. I help businesses turn data into insights using smart dashboards and reports. I am open to part-time remote opportunities.</p>
   </section>
 
-  <section data-aos="fade-up">
+  <section id="education" data-aos="fade-up">
     <h2>Education</h2>
     <ul>
       <li><strong>Postgraduate Diploma in Data Analysis</strong><br>Faculty of Statistical Studies, Cairo University</li>
@@ -87,7 +61,7 @@
     </ul>
   </section>
 
-  <section data-aos="fade-up">
+  <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
     <ul>
       <li>Power BI</li>
@@ -98,7 +72,7 @@
     </ul>
   </section>
 
-  <section data-aos="fade-up">
+  <section id="languages" data-aos="fade-up">
     <h2>Languages</h2>
     <ul>
       <li>Arabic - Native</li>
@@ -134,24 +108,29 @@
     </div>
   </section>
 
-  <section data-aos="fade-up">
+  <section id="cv" data-aos="fade-up">
     <h2>CV</h2>
     <p><a href="Ahmed Magdy Ahmed Elsadek-1.pdf" download>Download my CV (PDF)</a></p>
   </section>
 
-  <section data-aos="fade-up">
+  <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:Ahmed.elsadek.data@gmail.com">Ahmed.elsadek.data@gmail.com</a></p>
     <p>Phone: 01050618070</p>
     <p>Location: Cairo, Egypt</p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-magdy-967668357/" target="_blank">ahmed-magdy-967668357</a></p>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Ahmed Magdy Elsadek</p>
+  </footer>
+
 </div>
 
-<!-- Scroll To Top Button -->
+<!-- Scroll to Top Button -->
 <button id="scrollTopBtn" onclick="scrollToTop()">↑ Top</button>
 
-<!-- AOS + JS -->
+<!-- AOS & JS -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
@@ -164,7 +143,6 @@
       btn.style.display = "none";
     }
   };
-
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
