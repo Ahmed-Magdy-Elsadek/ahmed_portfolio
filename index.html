@@ -2,97 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ahmed Magdy Elsadek</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+    }
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .project img {
+      width: 100%;
+      max-width: 600px;
+      transition: transform 0.3s ease;
+    }
+    .project img:hover {
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+      .profile-img {
+        width: 100px;
+      }
+      .project img {
+        width: 100%;
+      }
+    }
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <img src="file_00000000a4a86246b30e808f23cde75d.png" alt="Ahmed Magdy Elsadek" class="profile-img" />
-      <h1>Ahmed Magdy Elsadek</h1>
-      <p>Data Analyst | SPSS & Power BI Specialist</p>
-    </header>
+<div class="container">
+  <header class="header" data-aos="fade-down">
+    <img src="file_00000000a486246b30e8808f23cde75d.png" alt="Ahmed Magdy Elsadek" class="profile-img" />
+    <h1>Ahmed Magdy Elsadek</h1>
+    <p>Data Analyst | SPSS & Power BI Specialist</p>
+  </header>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I'm a passionate data analyst specialized in SPSS and Power BI. I hold a Postgraduate Diploma in Data Analysis from the Faculty of Statistical Studies, Cairo University.
-        I help businesses turn data into insights using smart dashboards and reports. I am open to part-time remote opportunities.
-      </p>
-    </section>
+  <section data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I'm a passionate data analyst specialized in SPSS and Power BI. I hold a Postgraduate Diploma in Data Analysis. I help businesses turn data into insights using smart dashboards and reports. I am open to part-time remote opportunities.</p>
+  </section>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Postgraduate Diploma in Data Analysis</strong><br>Faculty of Statistical Studies, Cairo University</li>
-        <li><strong>Bachelor's Degree in Communications Engineering</strong></li>
-      </ul>
-    </section>
+  <section data-aos="fade-up">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Postgraduate Diploma in Data Analysis</strong><br>Faculty of Statistical Studies, Cairo University</li>
+      <li><strong>Bachelor's Degree in Communications Engineering</strong></li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Power BI</li>
-        <li>IBM SPSS</li>
-        <li>Data Cleaning</li>
-        <li>Data Visualization</li>
-        <li>Business Intelligence</li>
-      </ul>
-    </section>
+  <section data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>Power BI</li>
+      <li>IBM SPSS</li>
+      <li>Data Cleaning</li>
+      <li>Data Visualization</li>
+      <li>Business Intelligence</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Languages</h2>
-      <ul>
-        <li>Arabic – Native</li>
-        <li>English – Good</li>
-      </ul>
-    </section>
+  <section data-aos="fade-up">
+    <h2>Languages</h2>
+    <ul>
+      <li>Arabic - Native</li>
+      <li>English - Good</li>
+    </ul>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
 
-      <div class="project">
-        <h3>Car Sales Dashboard</h3>
-        <img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard">
-        <p>A Power BI dashboard visualizing car sales data, categorized by manufacturer, engine size, and vehicle type.</p>
-      </div>
+    <div class="project">
+      <h3>Car Sales Dashboard</h3>
+      <img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard">
+      <p>A Power BI dashboard visualizing car sales data, categorized by manufacturer, engine size, and vehicle type.</p>
+    </div>
 
-      <div class="project">
-        <h3>Sales Analytics Dashboard</h3>
-        <img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard">
-        <p>A comprehensive dashboard showing total sales, profits, and order insights across different states and product categories.</p>
-      </div>
+    <div class="project">
+      <h3>Sales Analytics Dashboard</h3>
+      <img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard">
+      <p>A comprehensive dashboard showing total sales, profits, and order insights across different states and products.</p>
+    </div>
 
-      <div class="project">
-        <h3>Movies Insights Dashboard</h3>
-        <img src="IMG_20250805_090640.jpg" alt="Movies Insights Dashboard">
-        <p>Dashboard analyzing top 1000 movies by revenue, ratings, genres, and certificates using Power BI.</p>
-      </div>
+    <div class="project">
+      <h3>Movies Insights Dashboard</h3>
+      <img src="IMG_20250805_090640.jpg" alt="Movies Insights Dashboard">
+      <p>Dashboard analyzing top 1000 movies by revenue, ratings, genres, and certificates using Power BI.</p>
+    </div>
 
-      <div class="project">
-        <h3>Lung Cancer Dashboard</h3>
-        <img src="IMG-20250821-WA0000.jpg" alt="Lung Cancer Dashboard">
-        <p>A Power BI dashboard analyzing lung cancer patients based on gender, smoking status, survival, and treatment types.</p>
-      </div>
-    </section>
+    <div class="project">
+      <h3>Lung Cancer Dashboard</h3>
+      <img src="IMG-20250821-WA0000.jpg" alt="Lung Cancer Dashboard">
+      <p>A Power BI dashboard analyzing lung cancer patients based on gender, smoking status, survival, and treatment types.</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>CV</h2>
-      <p><a href="Ahmed Magdy Ahmed Elsadek-1.pdf" download>Download my CV (PDF)</a></p>
-    </section>
+  <section data-aos="fade-up">
+    <h2>CV</h2>
+    <p><a href="Ahmed Magdy Ahmed Elsadek-1.pdf" download>Download my CV (PDF)</a></p>
+  </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:Ahmed.elsadek.data@gmail.com">Ahmed.elsadek.data@gmail.com</a></p>
-      <p>Phone: 01503061807</p>
-      <p>Location: Cairo, Egypt</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-magdy-967668357" target="_blank">ahmed-magdy-967668357</a></p>
-    </section>
+  <section data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:Ahmed.elsadek.data@gmail.com">Ahmed.elsadek.data@gmail.com</a></p>
+    <p>Phone: 01050618070</p>
+    <p>Location: Cairo, Egypt</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-magdy-967668357/" target="_blank">ahmed-magdy-967668357</a></p>
+  </section>
+</div>
 
-    <footer>
-      <p>© 2025 Ahmed Magdy Elsadek</p>
-    </footer>
-  </div>
+<!-- Scroll To Top Button -->
+<button id="scrollTopBtn" onclick="scrollToTop()">↑ Top</button>
+
+<!-- AOS + JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  const btn = document.getElementById("scrollTopBtn");
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
 </body>
 </html>
