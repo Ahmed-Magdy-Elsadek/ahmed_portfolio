@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,31 +27,35 @@
       margin-top: 2rem;
       font-size: 2rem;
     }
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+    .project-section {
       padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
-    .project-card {
+    .project {
+      margin-bottom: 3rem;
       background: #fff;
-      border-radius: 20px;
-      padding: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
-    .project-card img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-    }
-    .project-card h2 {
-      font-size: 1.2rem;
+    .project h2 {
+      margin-top: 0;
       color: #34495e;
     }
-    .project-card p {
-      font-size: 0.95rem;
-      color: #555;
+    .project p {
+      font-size: 1rem;
+      margin: 0.5rem 0 1rem 0;
+    }
+    .project-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .project-images img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -61,47 +64,63 @@
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
     <a href="cv.html">CV</a>
-  </nav>
+  </nav>  <h1>Project Portfolio</h1>  <div class="project-section"><div class="project">
+  <h2>Car Sales Dashboard</h2>
+  <p>A dashboard analyzing vehicle resale trends, engine sizes, and manufacturer statistics using Power BI.</p>
+  <div class="project-images">
+    <img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard">
+  </div>
+</div>
 
-  <h1>Project Portfolio</h1>
+<div class="project">
+  <h2>Sales Analytics Dashboard</h2>
+  <p>Comprehensive sales dashboard showcasing total sales, profits, and order trends across multiple regions.</p>
+  <div class="project-images">
+    <img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard">
+  </div>
+</div>
 
-  <div class="project-grid">
+<div class="project">
+  <h2>Movies Insights Dashboard</h2>
+  <p>Data visualization of movie revenues, genres, and certifications using Power BI.</p>
+  <div class="project-images">
+    <img src="IMG_20250805_090640.jpg" alt="Movies Dashboard">
+  </div>
+</div>
 
-    <div class="project-card">
-      <img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard">
-      <h2>Car Sales Dashboard</h2>
-      <p>Analyzing vehicle resale trends, engine sizes, and manufacturer statistics.</p>
-    </div>
+<div class="project">
+  <h2>Lung Cancer Dashboard</h2>
+  <p>Clinical data visualized for lung cancer treatment outcomes, survival rates, and patient demographics.</p>
+  <div class="project-images">
+    <img src="IMG-20250821-WA0000.jpg" alt="Lung Cancer Dashboard">
+  </div>
+</div>
 
-    <div class="project-card">
-      <img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard">
-      <h2>Sales Analytics Dashboard</h2>
-      <p>A dashboard showing total sales, profits, and order insights across multiple regions.</p>
-    </div>
+<div class="project">
+  <h2>Supply Chain Analytical Dashboard</h2>
+  <p>Full supply chain overview including manufacturing, shipping, and profit analysis across 4 dashboard pages.</p>
+  <div class="project-images">
+    <img src="IMG-20250905-WA0046.jpg" alt="Cover">
+    <img src="IMG-20250905-WA0047.jpg" alt="Manufacturing">
+    <img src="IMG-20250905-WA0048.jpg" alt="Shipping">
+    <img src="IMG-20250905-WA0049.jpg" alt="Sales/Profit">
+  </div>
+</div>
 
-    <div class="project-card">
-      <img src="IMG_20250805_090640.jpg" alt="Movies Insights Dashboard">
-      <h2>Movies Insights Dashboard</h2>
-      <p>Analyzing top movies by revenue, genre, and certificates using Power BI.</p>
-    </div>
-
-    <div class="project-card">
-      <img src="IMG-20250821-WA0000.jpg" alt="Lung Cancer Dashboard">
-      <h2>Lung Cancer Dashboard</h2>
-      <p>Interactive dashboard showing treatment outcomes, survival status, and patient data by country.</p>
-    </div>
-
-    <div class="project-card">
-      <img src="IMG-20250905-WA0046.jpg" alt="Supply Chain Analytical Dashboard">
-      <h2>Supply Chain Dashboard</h2>
-      <p>Dashboard analyzing supply chain KPIs, shipping methods, costs, and production efficiency.</p>
-    </div>
-
-    <div class="project-card">
-      <img src="Screenshot-2025-09-12-191434.jpg" alt="Customer Satisfaction SPSS">
-      <h2>Customer Satisfaction Analysis</h2>
-      <p>SPSS statistical analysis on e-wallet customer satisfaction using regression and correlation.</p>
-    </div>
+<div class="project">
+  <h2>Customer Satisfaction (SPSS)</h2>
+  <p>Survey analysis using SPSS to assess satisfaction with a telecom e-wallet. Sample size: 50. Applied regression, correlation, and frequency analysis.</p>
+  <div class="project-images">
+    <img src="Screenshot-2025-09-12-191434.jpg" alt="SPSS 1">
+    <img src="Screenshot-2025-09-12-191441.jpg" alt="SPSS 2">
+    <img src="Screenshot-2025-09-12-191448.jpg" alt="SPSS 3">
+    <img src="Screenshot-2025-09-12-191454.jpg" alt="SPSS 4">
+    <img src="Screenshot-2025-09-12-191509.jpg" alt="SPSS 5">
+    <img src="Screenshot-2025-09-12-191516.jpg" alt="SPSS 6">
+    <img src="Screenshot-2025-09-12-191525.jpg" alt="SPSS 7">
+    <img src="Screenshot-2025-09-12-191605.jpg" alt="SPSS 8">
+  </div>
+</div>
 
   </div>
 </body>
