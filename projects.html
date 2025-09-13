@@ -1,51 +1,107 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Ahmed Elsadek</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f4f7f9;
+      color: #2c3e50;
+    }
+    nav {
+      background: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #6a1b9a;
+      font-weight: bold;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .project-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .project-card h2 {
+      font-size: 1.2rem;
+      color: #34495e;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
   <nav>
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
     <a href="cv.html">CV</a>
-  </nav>  <h1>Project Portfolio</h1>
+  </nav>
+
+  <h1>Project Portfolio</h1>
+
   <div class="project-grid">
+
     <div class="project-card">
       <img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard">
       <h2>Car Sales Dashboard</h2>
       <p>Analyzing vehicle resale trends, engine sizes, and manufacturer statistics.</p>
-    </div><div class="project-card">
-  <img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard">
-  <h2>Sales Analytics Dashboard</h2>
-  <p>A dashboard showing total sales, profits, and order insights across multiple regions.</p>
-</div>
+    </div>
 
-<div class="project-card">
-  <img src="IMG_20250805_090640.jpg" alt="Movies Insights Dashboard">
-  <h2>Movies Insights Dashboard</h2>
-  <p>Analyzing top movies by revenue, genre, and certificates using Power BI.</p>
-</div>
+    <div class="project-card">
+      <img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard">
+      <h2>Sales Analytics Dashboard</h2>
+      <p>A dashboard showing total sales, profits, and order insights across multiple regions.</p>
+    </div>
 
-<div class="project-card">
-  <img src="IMG-20250821-WA0000.jpg" alt="Lung Cancer Dashboard">
-  <h2>Lung Cancer Dashboard</h2>
-  <p>Interactive dashboard showing treatment outcomes, survival status, and patient data by country.</p>
-</div>
+    <div class="project-card">
+      <img src="IMG_20250805_090640.jpg" alt="Movies Insights Dashboard">
+      <h2>Movies Insights Dashboard</h2>
+      <p>Analyzing top movies by revenue, genre, and certificates using Power BI.</p>
+    </div>
 
-<div class="project-card">
-  <img src="supply-chain-cover.jpg" alt="Supply Chain Dashboard">
-  <h2>Supply Chain Analytical Dashboard</h2>
-  <p>Dashboard includes manufacturing, shipping, and sales performance insights across four interactive visuals.</p>
-</div>
+    <div class="project-card">
+      <img src="IMG-20250821-WA0000.jpg" alt="Lung Cancer Dashboard">
+      <h2>Lung Cancer Dashboard</h2>
+      <p>Interactive dashboard showing treatment outcomes, survival status, and patient data by country.</p>
+    </div>
 
-<div class="project-card">
-  <img src="spss-customer-satisfaction.jpg" alt="Customer Satisfaction Analysis">
-  <h2>Customer Satisfaction Analysis (SPSS)</h2>
-  <p>Statistical analysis using SPSS to measure satisfaction with a telecom e-wallet based on a sample of 50 users.</p>
-</div>
+    <div class="project-card">
+      <img src="IMG-20250905-WA0046.jpg" alt="Supply Chain Analytical Dashboard">
+      <h2>Supply Chain Dashboard</h2>
+      <p>Dashboard analyzing supply chain KPIs, shipping methods, costs, and production efficiency.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="Screenshot-2025-09-12-191434.jpg" alt="Customer Satisfaction SPSS">
+      <h2>Customer Satisfaction Analysis</h2>
+      <p>SPSS statistical analysis on e-wallet customer satisfaction using regression and correlation.</p>
+    </div>
 
   </div>
 </body>
