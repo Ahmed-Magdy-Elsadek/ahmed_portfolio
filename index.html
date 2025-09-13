@@ -49,7 +49,7 @@
     }
     .section {
       padding: 40px 20px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
     }
     h2 {
@@ -57,8 +57,20 @@
       padding-left: 10px;
       margin-bottom: 20px;
     }
-    ul {
-      padding-left: 20px;
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .projects-grid img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .projects-grid img:hover {
+      transform: scale(1.03);
     }
     footer {
       text-align: center;
@@ -75,7 +87,6 @@
   </style>
 </head>
 <body>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
@@ -89,60 +100,20 @@
   </div>
 
   <div class="section">
-    <h2>About Me</h2>
-    <p>
-      I'm a professional data analyst specialized in statistical analysis and business intelligence.
-      I hold a Diploma in Data Analysis from Cairo University and I use tools like SPSS and Power BI
-      to turn raw data into clear, visual, and insightful dashboards. I help organizations uncover patterns,
-      identify trends, and make data-driven decisions. I’ve worked on real-world projects involving
-      supply chain, customer satisfaction, and health analytics.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Education</h2>
-    <ul>
-      <li>🎓 Diploma in Data Analysis – Cairo University</li>
-      <li>🎓 Bachelor's in Communications Engineering – Alexandria University</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Services</h2>
-    <ul>
-      <li>📊 Statistical analysis using SPSS</li>
-      <li>📈 Data visualization using Power BI</li>
-      <li>📝 Survey analysis and reporting</li>
-      <li>📊 Interactive dashboard creation</li>
-      <li>🧾 PDF/Excel/Word report generation</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2><a href="projects.html" class="link">Projects</a></h2>
-    <p>Click the title to explore detailed dashboards and visualizations.</p>
-    <img src="Screenshot-2025-09-12-191434.jpg" alt="Customer Satisfaction" style="width: 100%; margin-top: 10px; border-radius: 10px;">
-    <img src="IMG-20250905-WA0046.jpg" alt="Supply Chain Dashboard" style="width: 100%; margin-top: 10px; border-radius: 10px;">
-  </div>
-
-  <div class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:eng.ahmed.elsadek.data@gmail.com" class="link">eng.ahmed.elsadek.data@gmail.com</a></p>
-    <p>Phone: <a href="tel:01500061807" class="link">01500061807</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-magdy-967668357" target="_blank" class="link">linkedin.com/in/ahmed-magdy-967668357</a></p>
-
-    <h3 style="margin-top: 20px;">Freelance Platforms:</h3>
-    <ul>
-      <li><a href="https://khamsat.com/user/ahmed_elsadek_data" target="_blank" class="link">📎 Khamsat</a></li>
-      <li><a href="https://mostaql.com/u/Ahmed_2032_data" target="_blank" class="link">📎 Mostaql</a></li>
-      <li><a href="https://www.freelancer.com/u/AhmedElsadek2032" target="_blank" class="link">📎 Freelancer</a></li>
-      <li><a href="https://www.upwork.com/freelancers/~0121066c2a0c0fbeb9" target="_blank" class="link">📎 Upwork</a></li>
-    </ul>
+    <h2>Projects</h2>
+    <p>Click any project to see full insights and dashboard images.</p>
+    <div class="projects-grid">
+      <a href="projects.html"><img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard" /></a>
+      <a href="projects.html"><img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard" /></a>
+      <a href="projects.html"><img src="IMG_20250805_090640.jpg" alt="Movies Insights Dashboard" /></a>
+      <a href="projects.html"><img src="IMG-20250821-WA0000.jpg" alt="Lung Cancer Dashboard" /></a>
+      <a href="projects.html"><img src="IMG-20250905-WA0046.jpg" alt="Supply Chain Dashboard" /></a>
+      <a href="projects.html"><img src="Screenshot-2025-09-12-191605.jpg" alt="Customer Satisfaction SPSS" /></a>
+    </div>
   </div>
 
   <footer>
     &copy; 2025 Ahmed Magdy Elsadek. All rights reserved.
   </footer>
-
 </body>
 </html>
