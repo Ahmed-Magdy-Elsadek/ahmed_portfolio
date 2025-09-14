@@ -3,98 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Project Portfolio | Ahmed Elsadek</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background-color: #f4f7f9;
-      color: #2c3e50;
-    }
-    nav {
-      background: white;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #6a1b9a;
-      font-weight: bold;
-    }
-    h1 {
-      text-align: center;
-      margin-top: 2rem;
-      font-size: 2rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #34495e;
-      font-size: 1.4rem;
-      margin-top: 2rem;
-      border-left: 4px solid #85d7c5;
-      padding-left: 10px;
-    }
-    p {
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-    .project-img {
-      width: 100%;
-      border-radius: 10px;
-      margin: 10px 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-  </style>
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="cv.html">CV</a>
-  </nav>
+  <main class="container">
+    <h1>Project Portfolio</h1>
 
-  <h1>Project Portfolio</h1>
+    <!-- Car Sales Dashboard -->
+    <section>
+      <h2>🚗 Car Sales Dashboard</h2>
+      <p>
+        A Power BI dashboard that analyzes vehicle resale trends, engine sizes, and manufacturer statistics. Filter by manufacturer, and visualize key KPIs like sales vs. demand and pricing by engine.
+      </p>
+      <img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard" />
+    </section>
 
-  <section>
-    <h2>Car Sales Dashboard</h2>
-    <p>A Power BI dashboard that analyzes vehicle resale trends, engine sizes, and manufacturer statistics. Filter by manufacturer, and visualize key KPIs like sales vs. demand and pricing by engine.</p>
-    <img src="IMG-20250629-WA0029.jpg" alt="Car Sales" class="project-img" />
+    <!-- Sales Analytics Dashboard -->
+    <section>
+      <h2>📈 Sales Analytics Dashboard</h2>
+      <p>
+        Built with Power BI, this dashboard explores local profits, and order insights across different regions and subcategories. Useful for tracking KPIs over time and measuring revenue generation.
+      </p>
+      <img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard" />
+    </section>
 
-    <h2>Sales Analytics Dashboard</h2>
-    <p>Built with Power BI, this dashboard explores total sales, profits, and order insights across different regions and subcategories. Useful for tracking KPIs over time and measuring revenue generation.</p>
-    <img src="IMG-20250724-WA0008.jpg" alt="Sales Dashboard" class="project-img" />
+    <!-- Movies Dashboard -->
+    <section>
+      <h2>🎬 Movies Insights Dashboard</h2>
+      <p>
+        This dashboard visualizes movie revenue, genres, certificates, and IMDb ratings. It identifies top-performing movies and main characteristics in a dynamic bar chart, matrix, and KPI cards.
+      </p>
+      <img src="IMG_20250805_090640.jpg" alt="Movies Dashboard" />
+    </section>
 
-    <h2>Movies Insights Dashboard</h2>
-    <p>This dashboard visualizes movie revenue, genres, certificates, and IMDb ratings. It identifies top-performing movies and main characteristics in a dynamic bar chart, matrix, and KPI cards.</p>
-    <img src="IMG_20250805_090640.jpg" alt="Movies Dashboard" class="project-img" />
+    <!-- Lung Cancer Dashboard -->
+    <section>
+      <h2>🩺 Lung Cancer Treatment Dashboard</h2>
+      <p>
+        An interactive Power BI report that displays patients’ survival status, smoking habits, treatment methods, and outcomes. Good for identifying lung cancer sensitivity among gender & age groups.
+      </p>
+      <img src="lung.jpg" alt="Lung Cancer Dashboard" />
+    </section>
 
-    <h2>Lung Cancer Treatment Dashboard</h2>
-    <p>An interactive Power BI report that displays patients’ survival status, smoking habits, treatment methods among countries. Good for identifying lung cancer sensitivity among genders.</p>
-    <img src="Today 07:38.jpg" alt="Lung Cancer Dashboard" class="project-img" />
+    <!-- Supply Chain Dashboard -->
+    <section>
+      <h2>📦 Supply Chain Analytical Dashboard</h2>
+      <p>
+        This Power BI project analyzes multiple phases in a supply chain: manufacturing, shipping, and profit categories. KPIs are shown in 4 detailed pages.
+      </p>
+      <img src="cover.jpg" alt="Supply Chain Cover" />
+      <img src="manufacturing.jpg" alt="Manufacturing Page" />
+      <img src="shipping.jpg" alt="Shipping Page" />
+      <img src="sales.jpg" alt="Sales Page" />
+    </section>
 
-    <h2>Supply Chain Analytical Dashboard</h2>
-    <p>This Power BI project analyzes multiple phases in a supply chain: manufacturing, shipping, and profit categories. KPIs are shown in 4 detailed pages.</p>
-    <img src="cover.jpg" alt="Supply Chain Cover" class="project-img" />
-    <img src="manufacturing.jpg" alt="Manufacturing Page" class="project-img" />
-    <img src="shipping.jpg" alt="Shipping Page" class="project-img" />
-    <img src="sales.jpg" alt="Sales Page" class="project-img" />
+    <!-- SPSS Project -->
+    <section>
+      <h2>📊 SPSS Statistical Analysis — Customer Satisfaction</h2>
+      <p>
+        A statistical report using SPSS to analyze customer satisfaction regarding wallet app experience. Sample size: 50 users. The study includes correlation analysis, regression, and frequency tables.
+      </p>
+      <img src="spss1.jpg" alt="SPSS 1" />
+      <img src="spss2.jpg" alt="SPSS 2" />
+      <img src="spss3.jpg" alt="SPSS 3" />
+      <img src="spss4.jpg" alt="SPSS 4" />
+      <img src="spss5.jpg" alt="SPSS 5" />
+      <img src="spss6.jpg" alt="SPSS 6" />
+    </section>
+  </main>
 
-    <h2>SPSS Statistical Analysis — Customer Satisfaction</h2>
-    <p>A statistical report using SPSS to analyze customer satisfaction regarding e-wallet app experience. Sample size: 50 users. The study includes correlation analysis, regression, and frequency tables.</p>
-    <img src="spss1.jpg" class="project-img" />
-    <img src="spss2.jpg" class="project-img" />
-    <img src="spss3.jpg" class="project-img" />
-    <img src="spss4.jpg" class="project-img" />
-    <img src="spss5.jpg" class="project-img" />
-    <img src="spss6.jpg" class="project-img" />
-  </section>
-
+  <footer>
+    <p>&copy; 2025 Ahmed Magdy Elsadek. All rights reserved.</p>
+  </footer>
 </body>
 </html>
