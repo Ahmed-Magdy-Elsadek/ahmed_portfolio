@@ -7,9 +7,9 @@
   <style>
     body {
       font-family: 'Roboto', sans-serif;
+      margin: 0;
       background-color: #f4f7f9;
       color: #2c3e50;
-      margin: 0;
     }
     nav {
       background: #fff;
@@ -28,28 +28,28 @@
       font-size: 2rem;
     }
     .project-section {
-      max-width: 960px;
-      margin: auto;
       padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
     .project {
-      background: #fff;
-      margin-bottom: 2rem;
-      border-radius: 20px;
-      padding: 1rem 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
     }
     .project h2 {
       color: #34495e;
+      border-left: 4px solid #85d7c5;
+      padding-left: 10px;
     }
     .project p {
-      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
     }
     .project img {
       width: 100%;
       border-radius: 10px;
-      margin: 10px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -58,49 +58,51 @@
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
     <a href="cv.html">CV</a>
-  </nav>
-  <h1>Project Portfolio</h1>  <div class="project-section">
-    <div class="project">
-      <h2>Car Sales Dashboard</h2>
-      <p>A dashboard analyzing vehicle resale trends, engine sizes, and manufacturer stats using Power BI.</p>
-      <img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard 1">
-    </div><div class="project">
+  </nav>  <h1>Project Portfolio</h1>
+  <div class="project-section"><div id="car-sales" class="project">
+  <h2>Car Sales Dashboard</h2>
+  <p>This dashboard analyzes vehicle resale trends, engine sizes, and manufacturer statistics. It enables filtering by year, manufacturer, and fuel type to evaluate performance and pricing dynamics.</p>
+  <img src="IMG-20250629-WA0029.jpg" alt="Car Sales Dashboard 1">
+</div>
+
+<div id="sales-analytics" class="project">
   <h2>Sales Analytics Dashboard</h2>
-  <p>Comprehensive sales dashboard showcasing total sales, profits, and order details across multiple regions.</p>
-  <img src="IMG-20250724-WA0008.jpg" alt="Sales Analytics Dashboard">
+  <p>Built with Power BI, this dashboard displays total sales, profits, and order insights across different regions and subcategories. Useful for tracking KPIs over time and measuring revenue generation.</p>
+  <img src="IMG-20250724-WA0008.jpg" alt="Sales Dashboard">
 </div>
 
-<div class="project">
+<div id="movies" class="project">
   <h2>Movies Insights Dashboard</h2>
-  <p>Power BI dashboard displaying top-grossing movies by genre, year, and rating certificate.</p>
-  <img src="IMG_20250805_090640.jpg" alt="Movies Insights Dashboard">
+  <p>This dashboard visualizes movie revenue, genres, certificates, and IMDb ratings. It identifies top-performing movies and common characteristics using charts like bar, tree, and KPI cards.</p>
+  <img src="IMG_20250805_090640.jpg" alt="Movies Dashboard">
 </div>
 
-<div class="project">
-  <h2>Lung Cancer Dashboard</h2>
-  <p>Interactive dashboard showing treatment outcomes, survival status, and patient data by country.</p>
-  <img src="IMG-20250821-WA0000.jpg" alt="Lung Cancer Dashboard">
+<div id="lung-cancer" class="project">
+  <h2>Lung Cancer Treatment Dashboard</h2>
+  <p>An interactive Power BI report that displays patient profiles, survival status, smoking habits, and treatment results across countries. Ideal for analyzing lung cancer patterns by demographics.</p>
+  <img src="IMG-20250821-WA0000.jpg" alt="Lung Cancer Cover">
 </div>
 
-<div class="project">
+<div id="supply-chain" class="project">
   <h2>Supply Chain Analytical Dashboard</h2>
-  <p>Full supply chain overview including manufacturing, shipping, and profit analysis across 4 detailed pages.</p>
+  <p>This Power BI project analyzes multiple phases in a supply chain: manufacturing, shipping, and final sales. It provides insights into delivery time, shipping cost, product categories, and profits by country.</p>
   <img src="IMG-20250905-WA0049.jpg" alt="Supply Chain Cover">
-  <img src="IMG-20250905-WA0046.jpg" alt="Manufacturing Page">
-  <img src="IMG-20250905-WA0047.jpg" alt="Shipping Page">
-  <img src="IMG-20250905-WA0048.jpg" alt="Sales/Profit Page">
+  <img src="IMG-20250905-WA0050.jpg" alt="Manufacturing Page">
+  <img src="IMG-20250905-WA0051.jpg" alt="Shipping Page">
+  <img src="IMG-20250905-WA0052.jpg" alt="Sales & Profit Page">
 </div>
 
-<div class="project">
-  <h2>Customer Satisfaction (SPSS)</h2>
-  <p>Survey analysis using SPSS to assess satisfaction with a telecommunications wallet. Sample size: 50. Applied correlation, outliers, and frequency analysis.</p>
-  <img src="Screenshot-2025-09-12-191623.jpg" alt="SPSS Screenshot 1">
-  <img src="Screenshot-2025-09-12-191605.jpg" alt="SPSS Screenshot 2">
-  <img src="Screenshot-2025-09-12-191532.jpg" alt="SPSS Screenshot 3">
-  <img src="Screenshot-2025-09-12-191458.jpg" alt="SPSS Screenshot 4">
-  <img src="Screenshot-2025-09-12-191434.jpg" alt="SPSS Screenshot 5">
-  <img src="Screenshot-2025-09-12-191330.jpg" alt="SPSS Screenshot 6">
-  <img src="Screenshot-2025-09-12-191300.jpg" alt="SPSS Screenshot 7">
+<div id="spss" class="project">
+  <h2>SPSS Statistical Analysis – Customer Satisfaction</h2>
+  <p>A statistical report using SPSS analyzing customer satisfaction of a telecom company’s e-wallet app. Sample size: 50 users. The project includes descriptive analysis, correlation, and linear regression.</p>
+  <img src="Screenshot-2025-09-12-191623.jpg" alt="SPSS 1">
+  <img src="Screenshot-2025-09-12-191624.jpg" alt="SPSS 2">
+  <img src="Screenshot-2025-09-12-191625.jpg" alt="SPSS 3">
+  <img src="Screenshot-2025-09-12-191626.jpg" alt="SPSS 4">
+  <img src="Screenshot-2025-09-12-191627.jpg" alt="SPSS 5">
+  <img src="Screenshot-2025-09-12-191628.jpg" alt="SPSS 6">
+  <img src="Screenshot-2025-09-12-191629.jpg" alt="SPSS 7 (Removed or Renamed)">
+  <img src="Screenshot-2025-09-12-191630.jpg" alt="SPSS 8">
 </div>
 
   </div>
